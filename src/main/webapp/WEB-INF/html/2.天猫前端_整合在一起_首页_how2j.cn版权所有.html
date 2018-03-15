@@ -186,12 +186,17 @@ div.categoryWithCarousel div.rightMenu a {
 div.categoryWithCarousel div.head {
 	width: 200px;
 	background-color: #C60A0A;
+	
+	/*上下居中了*/
 	height: 36px;
 	line-height: 36px;
+	
 	font-size: 16px;
 	font-weight: bold;
 	color: white;
 	margin-left: 20px;
+	
+/*既能设定大小 又不会换行 display一弄 用div还是span都一样了*/
 	display: inline-block;
 }
 
@@ -2416,7 +2421,7 @@ $(function(){
 <script>
 $(function(){
 	$("div.eachCategory").mouseenter(function(){
-		var cid = $(this).attr("cid");
+		var cid = $(this).attr("cid");//todo 把信息储存在自定义属性里面 方便拿
 		$("div.productsAsideCategorys[cid="+cid+"]").show();
 	});
 	$("div.eachCategory").mouseleave(function(){
