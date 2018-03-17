@@ -38,6 +38,8 @@ div.productItem img{
 	width: 187px;
 	height: 190px;
 }
+
+/*鼠标放在图片上 变白效果*/
 div.productItem  img:hover{
 	opacity: 0.7;
 	filter: alpha(opacity = 70);
@@ -45,27 +47,38 @@ div.productItem  img:hover{
 div.eachHomepageCategoryProducts{
 	margin: 0px 0px 40px 0px;
 }
+
 a.productItemDescLink{
 	display: inline-block;
 	height: 66px;
 	text-decoration:none;
 }
+
 span.categoryTitle{
 	font-size: 16px;
 	margin-left: 30px;
 	color: #646464;
 	font-weight: bold;
 }
+
+/*标题前的粗竖杆*/
 div.left-mark{
+	
 	display: inline-block;
+	vertical-align: top;/*行内元素默认靠在所在行的最底下 */
+	
 	height: 20px;
-	vertical-align: top;
 	width: 5px;
 	background-color: #19C8A9;
 }
+
+/*图片原来是行内元素*/
 img.endpng{
+	
+	/*这样能水平居中*/
 	display: block;
 	width: 82px;
+	
 	margin: 0 auto;
 }
 </style>
@@ -196,33 +209,3 @@ img.endpng{
 </div>
 
 
-﻿<style>
-  span.how2jcopyrightspan1{
-    font-weight:bold;
-  }
-
-  span.how2jcopyrightspan1 a{
-    color:blue;
-  }
-
-  span.how2jcopyrightspan1 a:hover{
-    color:#C40000;
-  }
-
-  span.how2jcopyrightspan2{
-  	color:red;
-      
-  }
-  div.how2jcopyrightDiv{
-  	width:500px;
-    margin:0px auto;
-    text-align:center;
-  }
-</style>
-<div class="how2jcopyrightDiv">
-  <span class="how2jcopyrightspan1"><a href="http://how2j.cn/k/tmall-front/tmall-front-790/790.html?tid=12">模仿天猫前端多功能交互教程 </a> 为how2j.cn 版权所有
-  </span>
-  <br>
-<span class="how2jcopyrightspan2">（仅供购买者学习，请勿私自传播，否则自行承担相关法律责任）</span>
-
-</div>

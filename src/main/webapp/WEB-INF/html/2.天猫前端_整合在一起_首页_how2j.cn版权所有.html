@@ -2350,7 +2350,7 @@ $(function () {
 </head >
 
 <body >
-
+<div style="height: 100px"></div>
 
 
 
@@ -2359,6 +2359,8 @@ $(function () {
 	
 	<script >
 $(function () {
+    
+    //todo 对应目录显示
     $("div.eachCategory").mouseenter(function () {
         var cid = $(this).attr("cid");//todo 把信息储存在自定义属性里面 方便拿
         $("div.productsAsideCategorys[cid=" + cid + "]").show();
@@ -2377,16 +2379,22 @@ $(function () {
         $(this).hide();
     });
 
+    //TODO 猫耳出现在红色条鼠标悬浮的块上
     $("div.rightMenu span").mouseenter(function () {
+        
         var left = $(this).position().left;
-        var top = $(this).position().top;
         var width = $(this).css("width");
         var destLeft = parseInt(left) + parseInt(width) / 2;
         $("img#catear").css("left", destLeft);
+        
+        var top = $(this).position().top;
         $("img#catear").css("top", top - 20);
+        
         $("img#catear").fadeIn(500);
 
     });
+    
+    
     $("div.rightMenu span").mouseleave(function () {
         $("img#catear").hide();
     });
@@ -2398,6 +2406,7 @@ $(function () {
 
 });
 </script >
+	
 	
 	<!--鼠标放上去才显示的猫耳-->
 	<img src = "http://how2j.cn/tmall/img/site/catear.png" id = "catear" class = "catear" />
